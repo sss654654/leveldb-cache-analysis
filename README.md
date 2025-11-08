@@ -89,18 +89,12 @@ LevelDB의 읽기 연산 수행 시:
 - **목적**: 자주 접근하는 데이터 블록을 메모리에 유지하여 디스크 I/O 감소
 - **기본 크기**: 4MB (db_bench `--cache_size` 옵션으로 조정 가능)
 
-### LRU 캐시 구조
+### ShardedLRUCache, LRUCache 구조
 
-<img src="./images/architecture/lru-cache-structure.png" width="60%">
-
-*그림 5. LRU 캐시 구조 - 논문의 "그림 3" 참고*
+<img width="762" height="337" alt="lru-cache-structure" src="https://github.com/user-attachments/assets/b68b3ccb-0142-40c5-925a-c41670efb5d1" />
 
 LevelDB는 **16-Shard ShardedLRUCache**를 사용하여 멀티스레드 환경에서 효율적인 캐시 관리를 수행합니다.
 
-#### ShardedLRUCache 구조
-<img src="./images/architecture/sharded-cache.png" width="70%">
-
-*그림 6. ShardedLRUCache 구조 - formatleveldb_study_ppt_2.pdf 슬라이드 15 참고*
 
 **핵심 설계**:
 ```cpp
@@ -313,5 +307,6 @@ Platform: AWS EC2
 #### 2. Previous Study
 - [DKU RocksDB Festival, 2021](https://github.com/DKU-StarLab/RocksDB_Festival)
 - [DKU LevelDB Study, 2022](https://github.com/DKU-StarLab/leveldb-study)
+
 
 ---
