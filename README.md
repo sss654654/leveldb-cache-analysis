@@ -244,10 +244,12 @@ class ShardedLRUCache {
 - **제목**: LevelDB 캐시 구조 및 성능 분석
 - **저자**: 홍수빈, 최민국, 유시환, 최종무
 - **학회**: 한국정보과학회(KSC) 2022 학부생 논문
-- **다운로드**: [논문 PDF](./papers/최종본LevelDB_캐시_구조_및_성능_분석.pdf)
+- [논문 PDF](./papers/최종본LevelDB_캐시_구조_및_성능_분석.pdf)
+
 
 ### 포스터 발표
-<img src="./images/poster/leveldb_포스터.png" width="70%">
+<img width="1058" height="1411" alt="leveldb 포스터" src="https://github.com/user-attachments/assets/007d6c1e-f4f7-40a2-b471-14b4d076c9e1" />
+
 
 *그림 9. 포스터 발표 - KSC 2022 제주도*
 
@@ -256,8 +258,8 @@ class ShardedLRUCache {
 - **학회**: KSC 2022 동계학술대회
 
 ### 발표자료
-- [캐시 분석 상세 PPT](./papers/analysis_Cache_week9.pdf)
-- [스터디 발표자료](./papers/formatleveldb_study_ppt_2.pdf)
+- [캐시 분석 상세 PPT](./papers/Cache_flow_analysis.pdf)
+- [스터디 발표자료](./papers/LevelDB_Benchmark_experiment.pdf)
 
 ---
 
@@ -310,4 +312,5 @@ Platform: AWS EC2
 
 
 ---
+
 
